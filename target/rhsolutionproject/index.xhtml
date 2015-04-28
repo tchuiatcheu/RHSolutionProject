@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta Charest="UTF-8">
+<title>Create personne</title>
+
+</head>
+<body>
+     <f:view>
+     <h:form>
+     <h:panelGrid border="0" columns="3" cellpadding="5">
+      <h:outputText value="Prénom" />
+      <h:inputText id="firstName" value="#{personCtrl.newPerson.firstName}"
+       required="true" requiredMessage="Prénom obligatoire" />
+     <h:message for="firstName" />
+      <h:outputText value="Nom" />
+     <h:inputText id="lastName" value="#{personCtrl.newPerson.lastName}"
+     required="true" requiredMessage="Nom obligatoire" />
+     <h:message for="firstName" />
+     <h:outputText />
+    <h:commandButton value="Ajouter" action="#{personCtrl.createPerson}" />
+     </h:panelGrid>
+    </h:form>
+</f:view
+</body>
+</html>
